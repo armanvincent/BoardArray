@@ -17,7 +17,7 @@ class BoardArray : public Board {
             // TODO: IMPLEMENT THIS FUNCTION
             // ALGORITHM IS PROVIDED IN INSTRUCTIONS.TXT
             for(int i = 0; i < SIZE; i++) {
-                if(entry[i]->compare(array[i * sizeof(Entry)])) {
+                if(entry[i]->compare(array[i])) {
                     for(int j = i; j < SIZE-1; j++) {
                         array[j + 1] = array[j]; 
                     }
